@@ -1,0 +1,28 @@
+COMMENT ON COLUMN ft_reclamacao.sk_data IS '20160101';
+COMMENT ON COLUMN ft_reclamacao.flag_atendida IS 'Mostra se a reclamação foi atendida ou não';
+
+
+ALTER TABLE ft_reclamacao ADD CONSTRAINT DIM_DATA_FT_RECLAMACAO_FK
+FOREIGN KEY (sk_data)
+REFERENCES dim_data (sk_data)
+NOT DEFERRABLE;
+
+ALTER TABLE ft_reclamacao ADD CONSTRAINT DIM_CNAE_FT_RECLAMACAO_FK
+FOREIGN KEY (sk_cnae)
+REFERENCES dim_cnae (sk_cnae)
+NOT DEFERRABLE;
+
+ALTER TABLE ft_reclamacao ADD CONSTRAINT DIM_EMPRESAS_FT_RECLAMACAO_FK
+FOREIGN KEY (sk_empresas)
+REFERENCES dim_empresas (sk_empresas)
+NOT DEFERRABLE;
+
+ALTER TABLE ft_reclamacao ADD CONSTRAINT DIM_REGIAO_FT_RECLAMACAO_FK
+FOREIGN KEY (sk_regiao)
+REFERENCES dim_regiao (sk_regiao)
+NOT DEFERRABLE;
+
+ALTER TABLE ft_reclamacao ADD CONSTRAINT DIM_ASSUNTO_FT_RECLAMACAO_FK
+FOREIGN KEY (sk_assunto)
+REFERENCES dim_assunto (sk_assunto)
+NOT DEFERRABLE;
