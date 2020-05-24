@@ -1,0 +1,6 @@
+CREATE TABLE stg_estado
+(
+  uf VARCHAR(4)
+, estado VARCHAR(19)
+)
+;
