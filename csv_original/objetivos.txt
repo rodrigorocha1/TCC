@@ -1,18 +1,4 @@
-Implementando um processo de ETL (Extract Transform, Load)" para a análise de variáveis 
-pertinentes a reclamações"
-
-Objetivo Geral
- -> Desenvolver uma solução de Business Inteligênce 
-com indicadores gerados a partir de dados abertos do procon
-de 2018.
-
-Objetivos Específicos
-
--> Construir um modelo dimensional para as entidades assunto, região, CNAE, Região,
-empresas , datas e se a reclamação foi atendida ou não.
-
--> Desenvolver uma aplicaçao de ETL para a carga dos dados
--> Desenvolver dashboard para o mapeamento de reclamações, indentificando quais setores tiveram 
-maior indice, em qual estado e o percentual de cada reclamaçao atendida por setor.  
-
-
+•	Grupo de setores com maior reclamação.
+•	Percentual de reclamações atendidas 
+•	Evolução do quadro de reclamações
+•	Verificar qual estado com maior índice de reclamação em um CNAE
